@@ -20,7 +20,7 @@ def get_player_info():
                 {
                     "status": "error",
                     "message": "Player ID is required",
-                    "credits": "nexxlokesh",
+                    "credits": "BASANTA",
                     "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                 }
             ), 400
@@ -31,7 +31,7 @@ def get_player_info():
                 {
                     "status": "error",
                     "message": "Failed to generate JWT token",
-                    "credits": "nexxlokesh",
+                    "credits": "BASANTA",
                     "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
                 }
             ), 500
@@ -107,7 +107,7 @@ def get_player_info():
                
                 result = {
                     "data": player_data,
-                    "credits": "nexxlokesh"
+                    "credits": "BASANTA"
                 }
 
                 return Response(
@@ -119,14 +119,14 @@ def get_player_info():
                 return jsonify(
                     {
                         "message": f"Failed to parse player information: {str(e)}",
-                        "credits": "nexxlokesh"
+                        "credits": "BASANTA"
                     }
                 ), 500
 
         return jsonify(
             {
                 "message": f"API request failed with status code: {response.status_code}",
-                "credits": "nexxlokesh"
+                "credits": "BASANTA"
             }
         ), response.status_code
 
@@ -134,6 +134,6 @@ def get_player_info():
         return jsonify(
             {
                 "message": f"An unexpected error occurred: {str(e)}",
-                "credits": "nexxlokesh"
+                "credits": "BASANTA"
             }
         ), 500
